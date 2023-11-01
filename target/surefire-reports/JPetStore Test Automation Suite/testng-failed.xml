@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [JPetStore Test Automation Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.pet.listener.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="JPetStore App Test Cases(failed)" verbose="0">
+    <classes>
+      <class name="com.pet.testcases.HomePageTest">
+        <methods>
+          <include name="verifyLogoTest"/>
+          <include name="verifyFishLink"/>
+          <include name="verifyBirdsLink"/>
+          <include name="setUp"/>
+          <include name="verifyReptilesLink"/>
+          <include name="tearDown"/>
+          <include name="verifyTitleTest"/>
+        </methods>
+      </class> <!-- com.pet.testcases.HomePageTest -->
+      <class name="com.pet.testcases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="loginTest"/>
+          <include name="loginPageLogoTest"/>
+          <include name="loginPageTitleTest"/>
+        </methods>
+      </class> <!-- com.pet.testcases.LoginPageTest -->
+      <class name="com.pet.testcases.FishPageTest">
+        <methods>
+          <include name="clickOnReturnToMainMenuLink"/>
+          <include name="clickOnAngelFishLink"/>
+          <include name="validateFishLabel"/>
+          <include name="setUp"/>
+          <include name="clickOnTigerSharkLink"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.pet.testcases.FishPageTest -->
+    </classes>
+  </test> <!-- JPetStore App Test Cases(failed) -->
+</suite> <!-- Failed suite [JPetStore Test Automation Suite] -->
