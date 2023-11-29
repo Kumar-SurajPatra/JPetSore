@@ -43,6 +43,7 @@ public class TestBase {
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().getPageLoadTimeout();
+        driver.manage().timeouts().getImplicitWaitTimeout();		
 		
 		driver.get(prop.getProperty("url"));
 				
